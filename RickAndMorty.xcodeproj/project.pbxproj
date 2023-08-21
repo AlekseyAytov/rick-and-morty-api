@@ -21,6 +21,8 @@
 		6BD24AD62A8D105E00B8037E /* RickAndMortyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD24AD52A8D105E00B8037E /* RickAndMortyUITestsLaunchTests.swift */; };
 		6BD24AE42A8D117100B8037E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD24AE32A8D117100B8037E /* Constants.swift */; };
 		6BD24AE72A8D11AC00B8037E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6BD24AE62A8D11AC00B8037E /* SnapKit */; };
+		6BE3CEA12A93EA8E005FA1E7 /* MainViewNavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3CEA02A93EA8E005FA1E7 /* MainViewNavigationTitle.swift */; };
+		6BE3CEA32A94021B005FA1E7 /* HeaderForSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3CEA22A94021B005FA1E7 /* HeaderForSection.swift */; };
 		6BE3F0C72A8F52BD001F4599 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3F0C62A8F52BD001F4599 /* NetworkModel.swift */; };
 		6BE3F0CA2A8F56DE001F4599 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3F0C92A8F56DE001F4599 /* NetworkService.swift */; };
 		6BE3F0CD2A8F6489001F4599 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3F0CC2A8F6489001F4599 /* MainViewController.swift */; };
@@ -68,6 +70,8 @@
 		6BD24AD32A8D105E00B8037E /* RickAndMortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITests.swift; sourceTree = "<group>"; };
 		6BD24AD52A8D105E00B8037E /* RickAndMortyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6BD24AE32A8D117100B8037E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6BE3CEA02A93EA8E005FA1E7 /* MainViewNavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewNavigationTitle.swift; sourceTree = "<group>"; };
+		6BE3CEA22A94021B005FA1E7 /* HeaderForSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderForSection.swift; sourceTree = "<group>"; };
 		6BE3F0C62A8F52BD001F4599 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		6BE3F0C92A8F56DE001F4599 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		6BE3F0CC2A8F6489001F4599 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 		6B32FF4F2A8E9C22007FC318 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6BE3CE9F2A93EA74005FA1E7 /* Labels */,
 				6BE3F0D42A8F9485001F4599 /* LoadingState */,
 				6BE3F0CE2A8F6680001F4599 /* Screen */,
 				6B32FF502A8E9C2B007FC318 /* Cells */,
@@ -197,6 +202,15 @@
 				6BD24AE32A8D117100B8037E /* Constants.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BE3CE9F2A93EA74005FA1E7 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				6BE3CEA02A93EA8E005FA1E7 /* MainViewNavigationTitle.swift */,
+				6BE3CEA22A94021B005FA1E7 /* HeaderForSection.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 		6BE3F0C52A8F52AA001F4599 /* Model */ = {
@@ -392,7 +406,9 @@
 				6BE3F0DB2A913CA6001F4599 /* DetailView.swift in Sources */,
 				6BE3F0C72A8F52BD001F4599 /* NetworkModel.swift in Sources */,
 				6BD24AB52A8D105300B8037E /* SceneDelegate.swift in Sources */,
+				6BE3CEA12A93EA8E005FA1E7 /* MainViewNavigationTitle.swift in Sources */,
 				6BD24AE42A8D117100B8037E /* Constants.swift in Sources */,
+				6BE3CEA32A94021B005FA1E7 /* HeaderForSection.swift in Sources */,
 				6BE3F0CA2A8F56DE001F4599 /* NetworkService.swift in Sources */,
 				6BE3F0CD2A8F6489001F4599 /* MainViewController.swift in Sources */,
 				6BE3F0DD2A913F27001F4599 /* InfoCell.swift in Sources */,
