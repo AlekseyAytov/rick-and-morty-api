@@ -8,7 +8,6 @@
 import UIKit
 import SnapKit
 
-
 protocol DetailViewDataSource: AnyObject {
     func numberOfEpisodes() -> Int
     func getEpisode(for index: Int) -> EpisodeNetworkModel
@@ -119,7 +118,7 @@ extension DetailView: UITableViewDataSource {
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: EpisodeCell.reuseId, for: indexPath) as! EpisodeCell
             cell.name = dataSource?.getEpisode(for: indexPath.row).name
-            cell.number = dataSource?.getEpisode(for: indexPath.row).episode
+            cell.number = parsNumberElements(number: dataSource?.getEpisode(for: indexPath.row).episode ?? "")
             cell.air = dataSource?.getEpisode(for: indexPath.row).air_date
             return cell
         default:
@@ -127,6 +126,26 @@ extension DetailView: UITableViewDataSource {
         }
         
         return UITableViewCell(style: .default, reuseIdentifier: nil)
+    }
+    
+    func parsNumberElements(number: String) -> String {
+        var matchedStrings: [String] = []
+        
+        let regex =  try! NSRegularExpression(pattern: "S([0-9]{1,})E([0-9]{1,})")
+        let matches = regex.matches(in: number, range: NSRange(location: 0, length: number.count))
+        for match in matches {
+            for n in 0..<match.numberOfRanges {
+                let range = match.range(at: n)
+                let swiftRange = Range(range, in: number)
+                matchedStrings.append(String(number[swiftRange!]))
+            }
+        }
+        
+        if !matchedStrings.isEmpty {
+            return "Episode \(matchedStrings[2]), Season \(matchedStrings[1])"
+        } else {
+            return "Episode 0, Season 0"
+        }
     }
 }
 

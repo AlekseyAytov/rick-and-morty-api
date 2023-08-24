@@ -60,6 +60,7 @@ class LocationCell: UITableViewCell {
     private lazy var locationNameStack: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [locationName, locationType])
         stack.axis = .vertical
+        stack.spacing = 10
         stack.distribution = .fillProportionally
         return stack
     }()
@@ -69,6 +70,7 @@ class LocationCell: UITableViewCell {
         stack.axis = .horizontal
         stack.spacing = 16
         stack.distribution = .fill
+        stack.alignment = .center
         return stack
     }()
     

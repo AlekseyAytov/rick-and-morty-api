@@ -40,15 +40,15 @@ class EpisodeCell: UITableViewCell {
     
     private lazy var episodeNumber: UILabel = {
         let label = UILabel()
-        label.font = Constants.Fonts.gilroy16Medium
-        label.textColor = .white
+        label.font = Constants.Fonts.gilroy13Medium
+        label.textColor = Constants.Colors.accent1
         label.textAlignment = .left
         return label
     }()
     
     private lazy var airDate: UILabel = {
         let label = UILabel()
-        label.font = Constants.Fonts.gilroy16Medium
+        label.font = Constants.Fonts.gilroy13Medium
         label.textColor = Constants.Colors.accent2
         label.textAlignment = .right
         return label
